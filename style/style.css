@@ -1,0 +1,200 @@
+@import "./fonts.css";
+
+/*Тело страницы*/
+.body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+/*Ссылки */
+.a {
+    text-decoration: none;
+}
+/*Форма регистрации*/
+.form {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+/*Первый грид*/
+.sub1 {
+    background: url("../images/image 1.png") no-repeat center/cover;
+    height: 100vh;
+}
+/*Второй грид*/
+.sub2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*Основной грид*/
+.main_Grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}
+/*Первый текст*/
+.MainText {
+    margin: 0;
+    width: 350px;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    color: #1A202C;
+}
+/*Первый текст внутри формы */
+.subText {
+    text-align: center;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 5px 75px 0 0;
+    color: #2D3748;
+}
+/*Блок с эмейл*/
+.login {
+    display: flex;
+    flex-direction: column;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #4A5568;
+}
+/*Инпут логин внутри блока с Эмейл*/
+.inp_log {
+    margin: 11px 0;
+    border: 1px solid #E8E8E8;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 350px;
+    height: 50px;
+    padding-top: 17px;
+    padding-left: 20px;
+    padding-bottom: 17px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #2D3748;
+}
+/*Инпут пароли внутри блока с Эмейл*/
+.inp_pass {
+    margin: 11px 0;
+    border: 1px solid #E8E8E8;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 350px;
+    height: 50px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 14px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #2D3748;
+}
+/*Плейсхолдер пароль внутри блока с Эмейл*/
+.inp_pass::placeholder {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+/*Отключение "показать пароль" внутри блока "инпуты Пароль"*/
+.inp_pass::-ms-reveal {
+    display: none;
+}
+/*Чекбокс и и "забыли пароль"*/
+.Main_rem_for {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 17px;
+}
+/*Чекбокс*/
+.rem_for1 {
+    display: flex;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #2D3748;
+
+}
+/*Внутринний чекбокс*/
+.check {
+    margin: 0 11px 0 0;
+    width: 15px;
+    height: 15px;
+}
+/*Настройки цвета для ссылки Чекбокса*/
+.color {
+    color: #2C5282;
+}
+/*Блок с копками*/
+.buttons {
+    margin-top: 27px;
+    display: flex;
+    flex-direction: column;
+}
+/*Первая кнопка*/
+.btn1 {
+    width: 347px;
+    height: 50px;
+    background: #04C45C;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    transition: 0.6s;
+}
+/*Обработка событий при наведении 1 */
+.btn1:hover{
+    background-color: #218f21;
+}
+/*Обработка событий при наведении 2 */
+.btn2:hover{
+    background: #11161e;
+}
+/*Вторая кнопка*/
+.btn2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 347px;
+    height: 50px;
+    background: #050e1c;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    transition: 0.6s;
+}
+/*Изображение Гугла внутри кпонки 2*/
+.google {
+    position: static;
+    margin-right: 11px;
+}
+/*Футер с "Войти на акк." */
+.footerTxt {
+    position: absolute;
+    margin: 0;
+    bottom: 50px;
+}
+/*Настройки текста Футера*/
+.footer_text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #616161;
+}
+/*Настройки ссылки внутри Футера*/
+.link{
+    text-decoration: none;
+    color: #2B6CB0;
+}
